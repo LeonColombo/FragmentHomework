@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interfaz.CargaAuto"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editMarca"
+        android:layout_centerHorizontal="true"
+        android:hint="INGRESE MARCA"
+        android:inputType="text"/>
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editModelo"
+    android:layout_centerHorizontal="true"
+    android:hint="INGRESE MODELO"
+    android:layout_below="@+id/editMarca"
+    android:inputType="text"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAnio"
+        android:layout_centerHorizontal="true"
+        android:hint="INGRESE AÑO"
+        android:layout_below="@+id/editModelo"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:id="@+id/btnGuardarAuto"
+        android:layout_below="@id/editAnio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        />
+
+</RelativeLayout>
